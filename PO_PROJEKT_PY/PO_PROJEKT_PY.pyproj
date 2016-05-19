@@ -27,6 +27,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Organizm.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PO_PROJEKT_PY.py" />
     <Compile Include="Swiat.py">
       <SubType>Code</SubType>

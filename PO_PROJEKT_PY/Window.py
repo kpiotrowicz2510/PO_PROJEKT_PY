@@ -6,11 +6,18 @@ from System.Windows.Media import SolidColorBrush, Color
 class MyWindow(Window):
     def __init__(self):
          wpf.LoadComponent(self, 'PO_PROJEKT_PY.xaml')
+    def ChangeButton(self, id, r,g,b):
+        m = self.mgrid.Children[id]
+        m.Background = SolidColorBrush(Color.FromRgb(r,g,b))
     def Button_Click(self, sender, e):
-        name = sender.Name
-        self.lab.Content += name
-        #id 
-        #self.Content.Children[1].Text += sender.Name
+        #name = sender.Name
+        #self.lab.Content += name
+        #m = self.mgrid.Children[0]
+        #m.Background = SolidColorBrush(Color.FromRgb(255,0,0))
+        #ajjj
+        return True
+    def AddOrgMonit(self):
+        return True
     def AddButton(self):
         self.sizeX = 10
         self.sizeY = 10
