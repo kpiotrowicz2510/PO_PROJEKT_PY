@@ -11,11 +11,12 @@
     <WorkingDirectory>.</WorkingDirectory>
     <IsWindowsApplication>True</IsWindowsApplication>
     <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
-    <LaunchProvider>IronPython (.NET) launcher</LaunchProvider>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
     <InterpreterVersion>2.7</InterpreterVersion>
     <OutputPath>.</OutputPath>
     <Name>PO_PROJEKT_PY</Name>
     <RootNamespace>PO_PROJEKT_PY</RootNamespace>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,6 +28,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="PO_PROJEKT_PY.py" />
+    <Compile Include="Swiat.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Window.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="PO_PROJEKT_PY.xaml">

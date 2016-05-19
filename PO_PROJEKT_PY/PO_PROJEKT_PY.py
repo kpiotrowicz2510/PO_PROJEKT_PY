@@ -1,11 +1,8 @@
-import wpf
-
-from System.Windows import Application, Window
-
-class MyWindow(Window):
-    def __init__(self):
-        wpf.LoadComponent(self, 'PO_PROJEKT_PY.xaml')
-    
+from Window import *
+from Swiat import Swiat
 
 if __name__ == '__main__':
-    Application().Run(MyWindow())
+    MySwiat = Swiat(1,1)
+    myWin = MyWindow()
+    myWin.AddButton()
+    Application().Run(myWin)
